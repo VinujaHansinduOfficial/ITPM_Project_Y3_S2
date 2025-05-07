@@ -1,0 +1,130 @@
+/* Bookings Container */
+.bookings-container {
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.bookings-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.bookings-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bookings-search input {
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Empty State */
+.bookings-empty {
+  text-align: center;
+  color: #888;
+}
+
+.bookings-empty .emoji {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Bookings Table */
+.bookings-table-wrapper {
+  overflow-x: auto;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-table th,
+.bookings-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.bookings-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.bookings-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Status Indicators */
+.booking-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.booking-status.confirmed {
+  background-color: #4caf50;
+}
+
+.booking-status.cancelled {
+  background-color: #f44336;
+}
+
+.booking-status.pending {
+  background-color: #ff9800;
+}
+
+/* Action Buttons */
+.booking-action {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.booking-action.view {
+  background-color: #007bff;
+  color: white;
+}
+
+.booking-action.cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.booking-action:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.booking-action:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+.booking-action.view:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.booking-action.cancel:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
