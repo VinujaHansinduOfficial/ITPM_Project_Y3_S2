@@ -1,0 +1,104 @@
+/* Night Sky Blues Color Palette */
+
+/* Define the blue colors */
+:root {
+  --primary-color: #00BFFF; /* Deep Sky Blue */
+  --secondary-color: #1C4E80; /* Royal Blue */
+  --background-gradient-start: rgba(0, 0, 0, 0.7);
+  --background-gradient-end: rgba(0, 0, 0, 0.4);
+  --heading-text-color: #ffffff; /* Pure White */
+  --subheading-text-color: #ADD8E6; /* Light Blue */
+  --hover-effect-color: #1E90FF; /* Dodger Blue */
+  --price-color: #16a085; /* Teal */
+  --button-bg-color: #3498db; /* Blue Button */
+}
+
+/* Featured Section */
+.fp {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.fpTitle {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--secondary-color); /* Royal Blue */
+}
+
+.fpGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fpItem {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fpItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fpImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.fpInfo {
+  padding: 16px;
+}
+
+.fpName {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-color); /* Royal Blue */
+  margin-bottom: 6px;
+}
+
+.fpCity {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.fpPrice {
+  display: block;
+  font-size: 16px;
+  color: var(--price-color); /* Teal */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.fpRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fpRating button {
+  background-color: var(--button-bg-color); /* Blue Button */
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.fpRating span {
+  font-size: 14px;
+  color: #444;
+}
