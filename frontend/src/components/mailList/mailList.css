@@ -1,0 +1,89 @@
+.mail {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mailTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mailDesc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.mailInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+  background-color: #ffe6e6;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #005fa3;
+}
+
+.successMessage {
+  color: #27ae60;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.visuallyHidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
