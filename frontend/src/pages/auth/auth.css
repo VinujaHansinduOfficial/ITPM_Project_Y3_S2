@@ -1,0 +1,129 @@
+/* Layout wrapper */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f2937;
+  padding: 20px;
+}
+
+/* Auth card */
+.auth-form {
+  background: #111827;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Optional logo image */
+/* Optional logo image */
+.auth-logo {
+  display: block;
+  width: 90px; /* or any size you prefer */
+  margin: 0 auto 20px auto;
+}
+
+
+/* Form title */
+.auth-form h2 {
+  font-size: 24px;
+  color: #f9fafb;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+/* Input styling */
+.form-group input {
+  width: 100%;
+  padding: 11px 15px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background-color: #1e293b;
+  font-size: 15px;
+  color: #f9fafb;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #14b8a6;
+  background-color: #0f172a;
+  outline: none;
+}
+
+/* Error message */
+.error-message {
+  background-color: #7f1d1d;
+  color: #fca5a5;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* Button */
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #14b8a6;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #0d9488;
+}
+
+/* Link to switch forms */
+.switch-form {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.switch-form a {
+  color: #38bdf8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.switch-form a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 30px 20px;
+  }
+
+  .auth-form h2 {
+    font-size: 20px;
+  }
+
+  .auth-button {
+    font-size: 14px;
+  }
+}
